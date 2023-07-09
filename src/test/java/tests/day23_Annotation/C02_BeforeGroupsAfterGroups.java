@@ -17,7 +17,8 @@ public class C02_BeforeGroupsAfterGroups {
         System.out.println("En başta beforeSuite çalışır");
     }
     @BeforeGroups({"erol","evren"})
-    public void beforeGroups() {
+    public void
+    beforeGroups() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
